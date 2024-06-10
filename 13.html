@@ -1,0 +1,352 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Webiste</title>
+
+    <!-- Style Css Link -->
+    <link rel="stylesheet" href="s.css">
+    <!-- Style Css Link -->
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+</head>
+<style>
+    .ro{
+        height: 600px;
+        width:1000px;
+       display: inline-flex ;
+       background-color: ;
+
+       
+    }
+    .btn{
+        display: flex;
+        
+        text-align: center;
+        margin-top: 40px;
+
+    
+    }
+    .return{
+        font-size: 26;
+        margin-top: 20px;
+        font-style: italic;
+        font-family: Arial;
+    }
+    .main-txt{
+         margin-top: 50px;
+    }
+    #po{
+        margin-top: 20px;
+       margin-left: 20px;
+       height: 500px;
+       width: 600px;
+       background-color:#f3f3f3;
+      border-bottom: solid 2px ;
+      border-right: solid 2px; 
+      border-top: solid 2px;
+      border-left: solid 2px;
+      
+       
+       
+    }
+    #head{
+        font-size: 48;
+        width: 600px;
+        text-align: center;
+        padding-left: 200px;
+        
+      
+        text-decoration: underline black 1.6px;
+    }
+    #p{
+        font-size: 20;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style:italic;
+        margin-top: 50px;
+        text-align: center;
+    }
+    #price{
+        font-size: 30;
+        margin-top: 40px;
+    }
+    #price sup{
+        color: green;
+        font-weight: bolder;
+    }
+    .star i{
+        color:rgba(255, 153, 0) ;
+
+    }
+    #s{
+        color:burlywood;
+        margin-top: 30px;
+        
+    }
+    #strike{
+        text-decoration: line-through;
+        color: grey;
+        padding-left: 10px;
+        padding-right: 7px;
+    }
+    #b1{
+        height: 40px;
+        font-weight: bold;
+    }
+    #b2{
+        height: 40px;
+    }
+</style>
+<body>
+    <div class="header">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="index.html"><img src="./images/logo.png" alt=""></a></div>
+
+                <ul class="links">
+                    <li><a href="#" id="first">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                    <li><a href="index.html">Reviews</a></li>
+                    
+                </ul>
+            </div>
+           
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Search" required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i>
+                </button>
+            </form>
+            <label for="show-cart" class="cart-icon"><i class="fa fa-shopping-cart"></i></label>
+            
+
+        </nav>  
+    </div>
+
+    <div class="ro">
+        <img src="./images/p12.png" id="po" >
+        <div class="card-body"  >
+
+            <h3 id="head">*Chair*</h3>
+            <p id="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed soluta ipsam magnam ad quae. Vero?</p>
+            <div class="star">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked" id="s"></i> <b>Rating...</b>
+            </div>
+            <h5 id="Price">Price: <sup>50% ↓</sup><s id="strike">₹6999</s> ₹3499</h5>
+            <div class="btn">
+            <a href="10.html"><button id="b1">Place Order</button> </a>  
+                <button class="add-to-cart-btn" id="b2">🛒 Add To Cart</button>
+            </div>
+            <div class="return"><b>↻ 7</b> Days Return Policy
+            <p id="deli">  ⛟ Free Delivery If Order Place NOW...</p>
+        <p>Delivered 🚛 in 5 working days</p></div>
+        </div>
+        
+    </div>
+
+
+        <!-- Product Section Start -->
+        <section class="product" id="product">
+            <div class="main-txt">
+                <h3> Similar Products</h3>
+                <h3>you may like</h3>
+            </div>
+            <div class="card-content">
+                <div class="row">
+                    <img src="./images/p1.png" alt="">
+                    <div class="card-body">
+                        <h3>Two seated sofa</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5 id="Pricee">Price: <sup>40% ↓</sup><s id="strike">₹4999</s> ₹2999</h5>
+                        <a href="1.html"><button>Order Now</button></a>
+                        <button class="add-to-cart-btn" onclick="addtocart('Two seated sofa ')">Add To Cart</button>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./images/p2.png" alt="">
+                    <div class="card-body">
+                        <h3>Chair</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5 id="Pricee">Price: <sup>40% ↓</sup><s id="strike">₹4999</s> ₹2999</h5>
+                        <a href="2.html"><button>Order Now</button></a>                   
+                        <button class="add-to-cart-btn" onclick="addtocart('Two seated sofa ')">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./images/p3.png" alt="">
+                    <div class="card-body">
+                        <h3>classic sofa</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5 id="Pricee">Price: <sup>40% ↓</sup><s id="strike">₹4999</s> ₹2999</h5>
+                        <a href="3.html"><button>Order Now</button></a>
+                        <button class="add-to-cart-btn" onclick="addtocart('Two seated sofa ')">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./images/p4.png" alt="">
+                    <div class="card-body">
+                        <h3>comfort chair</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5 id="Pricee">Price: <sup>40% ↓</sup><s id="strike">₹4999</s> ₹2999</h5>
+                        <a href="4.html"><button>Order Now</button></a>
+                        <button class="add-to-cart-btn" onclick="addtocart('Two seated sofa ')">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card-content">
+                <div class="row">
+                    <img src="./images/p5.png" alt="">
+                    <div class="card-body">
+                        <h3>Chair</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5 id="Pricee">Price: <sup>40% ↓</sup><s id="strike">₹4999</s> ₹2999</h5>
+                        <a href="5.html"><button>Order Now</button></a>
+                        <button class="add-to-cart-btn" onclick="addtocart('Two seated sofa ')">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./images/p6.png" alt="">
+                    <div class="card-body">
+                        <h3>marble style sofa</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5 id="Pricee">Price: <sup>40% ↓</sup><s id="strike">₹4999</s> ₹2999</h5>
+                        <a href="6.html"><button>Order Now</button></a>
+                        <button class="add-to-cart-btn" onclick="addtocart('Two seated sofa ')">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./images/p7.png" alt="">
+                    <div class="card-body">
+                        <h3>Chair</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5 id="Pricee">Price: <sup>40% ↓</sup><s id="strike">₹4999</s> ₹2999</h5>
+                        <a href="7.html"><button>Order Now</button></a>
+                        <button class="add-to-cart-btn" onclick="addtocart('Two seated sofa ')">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <img src="./images/p8.png" alt="">
+                    <div class="card-body">
+                        <h3>Chair</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <h5 id="Pricee">Price: <sup>40% ↓</sup><s id="strike">₹4999</s> ₹2999</h5>
+                        <a href="8.html"><button>Order Now</button></a>
+                        <button class="add-to-cart-btn" onclick="addtocart('Two seated sofa ')">Add To Cart</button>
+                    </div>
+                </div>
+                
+            </div>
+    
+        </section>
+        <!-- Product Section End -->
+
+
+    
+    <!-- Review Section Start -->
+    <section class="review" id="review">
+        <div class="main-txt">
+            <h3>Customers <span>Review</span></h3>
+        </div>
+
+        <div class="review-content">
+        <div class="box">
+        <div class="img">
+            <img src="./images/pic-1.png" alt="">
+        </div>
+        <h3>Ram</h3>
+        <div class="star">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, adipisci.</p>
+
+    </div>
+        <div class="box">
+        <div class="img">
+            <img src="./images/pic-2.png" alt="">
+        </div>
+        <h3>Kavita</h3>
+        <div class="star">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, adipisci.</p>
+
+    </div>
+        <div class="box">
+        <div class="img">
+            <img src="./images/pic-3.png" alt="">
+        </div>
+        <h3>Rajesh</h3>
+        <div class="star">
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+            <i class="fa-solid fa-star checked"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, adipisci.</p>
+
+    </div>
+
+</div>
+
+    </section>
+    <!-- Review Section End -->
+
+
+
+
+
+    <!-- Footer Start -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et labore suscipit nisi non, laudantium delectus?
+                <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestias!
+            </p>
+            <div class="socail-links">
+               <a href="www.twittwer.com"> <i class="fa-brands fa-twitter"></i></a>
+                <a href="www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="www.instagram.com"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                <a href="www.pintrest.com"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom-content">
+            <p>Designed By <a href="#">GOPAL.G</a></p>
+            <div class="copyright">
+                <p>&copy;Copyright.All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <a href="#" class="arrow"><i><img src="./images/up-arrow.png" alt="" width="50px"></i></a>
+    
+</body>
+</html>
